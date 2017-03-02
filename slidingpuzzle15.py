@@ -54,7 +54,7 @@ class PuzzleBoard:
 		
 		possible_moves = []
 		for m in moves:
-			moved_tiles = list(tiles) # For deep copy
+			moved_tiles = list(tiles) # Deep deeeep copy
 			# Make the move 
 			moved_tiles[m], moved_tiles[empty_tile_index] = moved_tiles[empty_tile_index], moved_tiles[m]
 			possible_moves.append(moved_tiles)
